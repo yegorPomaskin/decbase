@@ -1,0 +1,72 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+a{
+    display: inline-block;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #646464;
+}
+
+.container{
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 78px;
+    color: #212121;
+}
+.subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.slick-arrow{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0px;
+    background-color: #fff;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    outline: none;
+    &:hover{
+        background-color: #37806B;
+    }
+}
+.arrow-next--img, .arrow-prev--img{
+    background-image: url(../images/service/arrow-next.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 4px;
+    height: 8px;
+    margin: auto;
+}
+.arrow-prev--img{
+    background-image: url(../images/service/arrow-prev.png);
+}
+.slick-next, .slick-prev{
+    position: absolute;
+    top: -62px;
+    right: 30px;
+}
+.slick-prev{
+    right: 30px;
+}
