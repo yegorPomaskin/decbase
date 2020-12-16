@@ -11,6 +11,11 @@
 .header__menu-list{
   li{
     display: inline-block;
+    &:hover{
+      a{
+        color: #b38363;
+      }
+    } 
     & + li{
       margin-left: 40px;
     }
@@ -30,6 +35,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header__menu-btn{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+  span{
+    background-color: black;
+    display: block;
+    height: 3px;
+    margin-bottom: 3px;
+  }
 }
 .header__link{
   margin-left: 50px;
@@ -84,6 +101,12 @@
   }
 }
 .main-link{
+  &:hover{
+    background-color: #fff;
+    color: #37806B;
+    border: 2px solid #37806B;
+  }
+  border: 2px solid transparent;
   text-decoration: none;
   padding: 10px 27px;
   background-color: #37806B;
@@ -243,9 +266,10 @@
   .main__img{
     padding-left: 0;
     padding-top: 10px;
+    padding-right: 132px;
     position: relative;
     &::before{
-    width: 681px;
+    max-width: 85%;
     height: 726px;
     bottom: 43px;
     left: -35px;
@@ -286,9 +310,9 @@
     padding-top: 10px;
     position: relative;
     &::before{
-    top: 31px;
+    top: 59px;
     width: 681px;
-    right: -31px;
+    right: -58px;
     height: 726px;
     }
     img{
@@ -478,6 +502,12 @@
   margin-bottom: 45px;
 }
 .news__link{
+  &:hover{
+    background-color: #fff;
+    color: #37806B;
+    border: 2px solid #37806B;
+  }
+  border: 2px solid transparent;
   background-color: #37806B;
   color: #fff;
   text-decoration: none;
@@ -506,6 +536,11 @@
   text-align: center;
 }
 .subscribe__title{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 78px;
+  color: #212121;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 17px;
@@ -517,7 +552,8 @@
     height: 1px;
     background-color: #C4C4C4;
     bottom: 0;
-    right: 33%;
+    left: 50%;
+    margin-left: -230px;
   }
 }
 .subscribe__text{
@@ -545,6 +581,7 @@
     }
   }
   button{
+    cursor: pointer;
     outline: none;
     position: absolute;
     top: 0;
@@ -674,3 +711,5 @@ footer{
 
 
 //end footer
+
+@import 'media';

@@ -21,7 +21,7 @@
             <img src="images/logo.png" alt="logo">
           </a>
         </div>
-        <div class="header__menu">
+        <nav class="header__menu">
           <ul class="header__menu-list">
             <li><a class="active" href="#">HOME</a></li>
             <li><a href="#">PROJECT</a></li>
@@ -32,6 +32,11 @@
             <li><a href="#">CONTACT</a></li>
           </ul>
           <a class="header__link" href="#">Sign Up</a>
+        </nav>
+        <div class="header__menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </div>
@@ -248,7 +253,7 @@
             </div>
             <div class="testimonials__info">
               <div class="testimonials__name">
-                Louis Saville <span>/CEO at Google inc</span>
+                Louis Saville <span><br>CEO at Google inc</span>
               </div>
               <div class="testimonials__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -263,7 +268,7 @@
             </div>
             <div class="testimonials__info">
               <div class="testimonials__name">
-                Rekha Varadwaz <span>/Manager at Nike inc</span>
+                Rekha Varadwaz <span><br>Manager at Nike inc</span>
               </div>
               <div class="testimonials__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -278,7 +283,7 @@
             </div>
             <div class="testimonials__info">
               <div class="testimonials__name">
-                Louis Saville <span>/CEO at Google inc</span>
+                Louis Saville<br><span>CEO at Google inc</span>
               </div>
               <div class="testimonials__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -293,7 +298,7 @@
             </div>
             <div class="testimonials__info">
               <div class="testimonials__name">
-                Rekha Varadwaz <span>/Manager at Nike inc</span>
+                Rekha Varadwaz <br><span>Manager at Nike inc</span>
               </div>
               <div class="testimonials__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -306,6 +311,7 @@
       </div>
     </div>
   </section>
+
   <section class="news">
     <div class="container">
       <div class="news__inner">
@@ -350,10 +356,11 @@
       </div>
     </div>
   </section>
+
   <section class="subscribe">
     <div class="container">
       <div class="subscribe__inner">
-        <div class="subscribe__title title">
+        <div class="subscribe__title">
           Don't Forget To Sign Up
         </div>
         <div class="subscribe__text">
@@ -362,13 +369,14 @@
         </div>
         <div class="subscribe__form">
           <form>
-            <input type="text" placeholder="Enter your email adress...">
+            <input type="email" placeholder="Enter your email adress..." required>
             <button type="submit">Subscribe</button>
           </form>
         </div>
       </div>
     </div>
   </section>
+
   <footer>
     <div class="footer__content">
       <div class="container">
@@ -438,7 +446,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
